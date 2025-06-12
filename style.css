@@ -1,0 +1,54 @@
+/* Estilos personalizados para la fuente y el scroll suave */
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth; /* Permite un scroll suave al navegar entre secciones */
+}
+
+/* Estilo para el acordeón de experiencia */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out; /* Transición suave para expandir/colapsar */
+}
+.accordion-content.active {
+    max-height: 500px; /* Suficientemente grande para contener el contenido */
+    transition: max-height 0.5s ease-in;
+}
+
+/* Animación para el cursor del efecto de escritura */
+.typing-cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: white;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Estilo para el botón de "Volver Arriba" */
+#scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #6366f1; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #4f46e5; /* Darker background on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
