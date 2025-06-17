@@ -1,18 +1,21 @@
-// JavaScript para la funcionalidad del acordeón
+// Espera a que el contenido del DOM esté completamente cargado antes de ejecutar el script
 document.addEventListener('DOMContentLoaded', () => {
-    const accordionHeaders = document.querySelectorAll('.accordion-header');
 
+    /**
+     * Funcionalidad del Acordeón para la sección de Experiencia.
+     * Permite expandir y colapsar los detalles de cada puesto de trabajo.
+     */
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
     accordionHeaders.forEach(header => {
         header.addEventListener('click', () => {
-            // Selecciona el contenido del acordeón asociado al header
-            const content = header.nextElementSibling.nextElementSibling; // Saltar la etiqueta <p> de la fecha
-            // Selecciona el icono de flecha dentro del header
+            // El contenido del acordeón es el siguiente elemento después del párrafo de la fecha
+            const content = header.nextElementSibling.nextElementSibling;
             const arrowIcon = header.querySelector('span');
 
-            // Alterna la clase 'active' para mostrar/ocultar el contenido
+            // Alterna la clase 'active' para controlar la visibilidad con CSS
             content.classList.toggle('active');
 
-            // Rota el icono de flecha para indicar el estado
+            // Rota el ícono de la flecha para indicar el estado (abierto/cerrado)
             if (content.classList.contains('active')) {
                 arrowIcon.style.transform = 'rotate(180deg)';
             } else {
@@ -21,75 +24,96 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // JavaScript para el scroll suave de la navegación
+    /**
+     * Funcionalidad de Scroll Suave.
+     * Anima el desplazamiento al hacer clic en los enlaces de navegación.
+     */
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+            const targetElement = document.querySelector(this.getAttribute('href'));
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
         });
     });
 
-    // JavaScript para el efecto de escritura
+    /**
+     * Efecto de Máquina de Escribir para el subtítulo de la sección de inicio.
+     * Escribe y borra dinámicamente una serie de frases.
+     */
     const typingTextElement = document.getElementById('typing-text');
+    // Se restaura la frase original y se mantienen las demás para un efecto dinámico.
     const phrases = [
-        "Busco una oportunidad desafiante para aplicar mi versatilidad y continuar mi desarrollo profesional en un entorno dinámico."
-    ];
+        "Busco una oportunidad desafiante para aplicar mi versatilidad y continuar mi desarrollo profesional en un entorno dinamico.",
+        ];
     let phraseIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
-    let typingSpeed = 70; // Velocidad de escritura
-    let deletingSpeed = 30; // Velocidad de borrado
-    let delayBeforeTyping = 1000; // Retraso antes de empezar a escribir la siguiente frase
+    const typingSpeed = 70; // Velocidad de escritura (ms)
+    const deletingSpeed = 30; // Velocidad de borrado (ms)
+    const delayBetweenPhrases = 2000; // Pausa al final de una frase (ms)
 
     function typeWriter() {
+        if (!typingTextElement) return; // Salir si el elemento no existe
+
         const currentPhrase = phrases[phraseIndex];
+        let typeTimeout = typingSpeed;
+
         if (isDeleting) {
-            // Borrando texto
+            // Proceso de borrado
             typingTextElement.textContent = currentPhrase.substring(0, charIndex - 1);
             charIndex--;
-            typingSpeed = deletingSpeed;
+            typeTimeout = deletingSpeed;
         } else {
-            // Escribiendo texto
+            // Proceso de escritura
             typingTextElement.textContent = currentPhrase.substring(0, charIndex + 1);
             charIndex++;
-            typingSpeed = 70;
         }
 
         if (!isDeleting && charIndex === currentPhrase.length) {
-            // Texto completamente escrito, empezar a borrar después de un retraso
-            typingSpeed = delayBeforeTyping;
+            // Se terminó de escribir la frase, pausar y luego empezar a borrar
+            typeTimeout = delayBetweenPhrases;
             isDeleting = true;
         } else if (isDeleting && charIndex === 0) {
-            // Texto completamente borrado, pasar a la siguiente frase
+            // Se terminó de borrar la frase, pasar a la siguiente
             isDeleting = false;
             phraseIndex = (phraseIndex + 1) % phrases.length;
-            typingSpeed = 500; // Pequeño retraso antes de escribir la siguiente frase
+            typeTimeout = 500; // Pequeña pausa antes de la siguiente frase
         }
 
-        setTimeout(typeWriter, typingSpeed);
+        setTimeout(typeWriter, typeTimeout);
     }
 
-    // Iniciar el efecto de escritura al cargar la página
+    // Iniciar el efecto de escritura
     typeWriter();
 
-    // JavaScript para el botón de "Volver Arriba"
+    /**
+     * Botón "Volver Arriba".
+     * Muestra el botón cuando el usuario se desplaza hacia abajo y
+     * lo oculta cuando está en la parte superior de la página.
+     */
     const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-    // Muestra u oculta el botón basado en el scroll
-    window.onscroll = function() {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    const toggleScrollToTopBtn = () => {
+        if (scrollToTopBtn && (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200)) {
             scrollToTopBtn.style.display = "block";
-        } else {
+        } else if (scrollToTopBtn) {
             scrollToTopBtn.style.display = "none";
         }
     };
+    
+    window.addEventListener('scroll', toggleScrollToTopBtn);
 
-    // Cuando el usuario hace clic en el botón, desplácese al principio del documento
-    scrollToTopBtn.addEventListener("click", () => {
-        document.body.scrollTop = 0; // Para Safari
-        document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
-    });
+    // Funcionalidad de clic para el botón
+    if(scrollToTopBtn) {
+        scrollToTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
 });
