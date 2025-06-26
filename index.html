@@ -4,17 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Nazly Uzcategui</title>
-    <!-- Favicon Placeholder -->
     <link rel="icon" href="https://placehold.co/32x32/6366f1/FFFFFF/png?text=NU" type="image/png">
-    <!-- Incluye Tailwind CSS CDN para un estilo rápido y responsivo -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Enlace a la fuente Inter de Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Enlace a tu archivo de estilos CSS personalizado -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">
-    <!-- Barra de Navegación (Header) -->
     <header class="bg-white shadow-md py-4 sticky top-0 z-50 rounded-b-lg">
         <nav class="container mx-auto flex flex-col sm:flex-row justify-between items-center px-4">
             <a href="#hero" class="text-2xl font-bold text-indigo-700 mb-2 sm:mb-0">Nazly Uzcategui</a>
@@ -28,10 +23,9 @@
         </nav>
     </header>
 
-    <!-- Sección de Inicio (Hero Section) -->
     <section id="hero" class="relative bg-gradient-to-r from-indigo-600 to-purple-700 text-white min-h-screen flex items-center justify-center p-4">
         <div class="container mx-auto text-center z-10 py-20">
-          
+            
             <img src="img/perfil.jpg" alt="Foto de perfil de Nazly Uzcategui" class="rounded-full mx-auto mb-6 border-4 border-white shadow-lg w-40 h-40 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/160x160/ffffff/9ca3af?text=Perfil';">
             <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4 animate-fade-in-down">
                 NAZLY JESENIA UZCATEGUI ROJAS
@@ -51,26 +45,24 @@
                 </a>
                </div>
         </div>
-        <!-- Fondo de degradado animado -->
         <div class="absolute inset-0 bg-gradient-to-br from-indigo-700 to-purple-800 opacity-75"></div>
     </section>
 
-    <!-- Sección Sobre Mí -->
     <section id="about" class="py-20 bg-gray-50 p-4">
         <div class="container mx-auto max-w-4xl">
             <h2 class="text-4xl font-bold text-center text-indigo-700 mb-12">Sobre Mí</h2>
             <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
                 <div class="md:w-1/2">
-                    <p class="text-lg leading-relaxed mb-6">
+                    <p class="text-lg leading-relaxed mb-6 text-justify">
                     Como desarrolladora web, mi mayor motivación es transformar ideas en soluciones digitales funcionales e intuitivas. Me especializo en <span class="font-semibold text-indigo-600">Python</span>, utilizando frameworks como <span class="font-semibold text-indigo-600">Django y Flask</span> para dar vida a proyectos robustos y escalables. Disfruto cada parte del proceso, desde la maquetación con <span class="font-semibold text-indigo-600">HTML y CSS</span> hasta la implementación de la lógica del servidor.
                     </p>
-                    <p class="text-lg leading-relaxed mb-6">
+                    <p class="text-lg leading-relaxed mb-6 text-justify">
                     Estoy inmersa en el ecosistema de <span class="font-semibold text-indigo-600">JavaScript y Node.js</span>, fortaleciendo mis habilidades para convertirme en una desarrolladora Full Stack. Además, busco activamente colaborar en proyectos innovadores que me permitan no solo aplicar mis conocimientos en <span class="font-semibold text-indigo-600">Python y SQL</span> sino también aprender de la comunidad y contribuir a soluciones que generen un impacto positivo.
-                   </p>
+                    </p>
                 </div>
                 <div class="md:w-1/2 bg-gray-100 p-6 rounded-lg shadow-inner">
                     <h3 class="text-2xl font-semibold text-indigo-700 mb-4">Logros Destacados</h3>
-                    <ul class="list-disc list-inside text-lg space-y-3">
+                    <ul class="list-disc list-inside text-lg space-y-3 **text-left**">
                         <li class="flex items-start">
                             <span class="text-indigo-600 font-bold text-xl mr-2">✓</span>
                             Desarrollo de una plataforma web de capacitación que centralizó material informativo, <strong class="text-green-600">reduciendo el tiempo de inducción en un 20%</strong>.
@@ -89,11 +81,9 @@
         </div>
     </section>
 
-    <!-- Sección de Experiencia Laboral -->
     <section id="experience" class="py-20 bg-white p-4">
         <div class="container mx-auto max-w-4xl">
             <h2 class="text-4xl font-bold text-center text-indigo-700 mb-12">Experiencia Laboral</h2>
-            <!-- Items de Experiencia con Acordeón -->
             <div class="bg-gray-100 p-6 rounded-xl shadow-md mb-6 transition-all duration-300 ease-in-out hover:shadow-lg">
                 <button class="accordion-header w-full text-left flex justify-between items-center py-2 text-xl font-semibold text-indigo-700">
                     Analista de Sistemas - TvNovedades Tv (Franquicias Direct TV S.A.S.)
@@ -107,7 +97,7 @@
                         <li>Provisión de asistencia técnica presencial, remota y telefónica a usuarios.</li>
                         <li>Gestión y soporte del ERP SAP, incluyendo infraestructura en la nube y solución de software.</li>
                         <li>Generación de reportes a través de "Mi Portal SAP" mediante consultas SQL.</li>
-                        <li>Administración y mantenimiento de bases de datos SQL (Nivel Intermedio).</li>                               
+                        <li>Administración y mantenimiento de bases de datos SQL (Nivel Intermedio).</li>                      
                         <li>Liderazgo de proyectos de pequeña escala.</li>
                         <li>Participación activa en procesos de actualización y mejora del ERP.</li>
                     </ul>
@@ -191,7 +181,6 @@
         </div>
     </section>
 
-    <!-- Sección de Habilidades -->
     <section id="skills" class="py-20 bg-gray-50 p-4">
         <div class="container mx-auto max-w-4xl">
             <h2 class="text-4xl font-bold text-center text-indigo-700 mb-12">Habilidades</h2>
@@ -243,12 +232,11 @@
         </div>
     </section>
 
-   
+    
     <section id="projects" class="py-20 bg-white p-4">
         <div class="container mx-auto max-w-4xl">
             <h2 class="text-4xl font-bold text-center text-indigo-700 mb-12">Proyectos</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Proyecto 1: Plataforma Web de Capacitación -->
                 <div class="bg-gray-100 p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out flex flex-col">
                     <img src="https://placehold.co/600x400/e2e8f0/333333?text=Proyecto+1" alt="Imagen del proyecto de capacitación" class="rounded-lg mb-6 shadow-md object-cover">
                     <h3 class="text-2xl font-bold text-indigo-700 mb-4">Plataforma Web de Capacitación</h3>
@@ -269,7 +257,6 @@
                     </div>
                 </div>
 
-                <!-- Proyecto 2: Automatización de Facturación Masiva -->
                 <div class="bg-gray-100 p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out flex flex-col">
                     <img src="https://placehold.co/600x400/e2e8f0/333333?text=Proyecto+2" alt="Imagen del proyecto de automatización" class="rounded-lg mb-6 shadow-md object-cover">
                     <h3 class="text-2xl font-bold text-indigo-700 mb-4">Automatización de Facturación Masiva</h3>
@@ -277,14 +264,14 @@
                         Implementación de Data Transfer Workbench (DTW) para optimizar el proceso de facturación.
                     </p>
                     <ul class="list-disc list-inside text-gray-600 mb-6">
-                        <li><strong class="text-green-600">Impacto:</strong> Reducción del tiempo de procesamiento en un 30%.</li>
+                        <li><strong class="text-green-600">Impacto:</strong> Reducción del tiempo de procesamiento en un 30% y disminución de errores en un 15%.</li>
                         <li><strong class="text-indigo-600">Tecnologías:</strong> SAP, SQL, DTW.</li>
                     </ul>
                     <div class="mt-auto flex space-x-4">
                         <a href="#" class="inline-block bg-indigo-600 text-white py-2 px-6 rounded-full hover:bg-indigo-700 transition duration-300 ease-in-out">
                             Ver Demo
                         </a>
-                         <a href="#" class="inline-block bg-gray-700 text-white py-2 px-6 rounded-full hover:bg-gray-800 transition duration-300 ease-in-out">
+                        <a href="#" class="inline-block bg-gray-700 text-white py-2 px-6 rounded-full hover:bg-gray-800 transition duration-300 ease-in-out">
                             Ver Código
                         </a>
                     </div>
@@ -293,7 +280,6 @@
         </div>
     </section>
 
-    <!-- Sección de Contacto con Formulario -->
     <section id="contact" class="py-20 bg-indigo-700 text-white p-4">
         <div class="container mx-auto max-w-2xl text-center">
             <h2 class="text-4xl font-bold mb-4">Contáctame</h2>
@@ -301,14 +287,17 @@
                 ¿Tienes un proyecto en mente? ¡Hablemos!
             </p>
             
-            <!-- Formulario de Contacto Formspree -->
-           
+            <div id="form-success-message" class="hidden bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-6 rounded-lg" role="alert">
+                <p class="font-bold">¡Mensaje Enviado!</p>
+                <p>Gracias por contactarme, te responderé a la brevedad.</p>
+            </div>
+            
             <form action="https://formspree.io/f/xrbklewz" method="POST" class="bg-white p-8 rounded-xl shadow-lg space-y-6 text-left text-gray-800">
                 <div>
                     <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
                     <input type="text" name="name" id="name" placeholder="Tu Nombre" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 transition">
                 </div>
-                 <div>
+                <div>
                     <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Correo Electrónico</label>
                     <input type="email" name="email" id="email" placeholder="ejemplo@correo.com" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 transition">
                 </div>
@@ -325,7 +314,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8 text-center rounded-t-lg">
         <div class="container mx-auto px-4">
              <div class="mb-6">
@@ -344,10 +332,8 @@
         </div>
     </footer>
 
-    <!-- Botón de "Volver Arriba" -->
     <button id="scrollToTopBtn" title="Volver Arriba">⬆️</button>
 
-    <!-- Enlace a tu archivo de script JavaScript personalizado -->
     <script src="script.js"></script>
 </body>
 </html>

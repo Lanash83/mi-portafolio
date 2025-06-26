@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (scrollToTopBtn && (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200)) {
             scrollToTopBtn.style.display = "block";
         } else if (scrollToTopBtn) {
-            scrollToTopBtn.style.display = "none";
+            scrollToToTopBtn.style.display = "none";
         }
     };
     
@@ -114,6 +114,51 @@ document.addEventListener('DOMContentLoaded', () => {
                 top: 0,
                 behavior: 'smooth'
             });
+        });
+    }
+
+    /**
+     * Gestión del formulario de contacto:
+     * 1. Previene el envío por defecto para usar AJAX.
+     * 2. Envía los datos a Formspree.
+     * 3. Limpia el formulario tras el éxito.
+     * 4. Muestra un mensaje de éxito temporal.
+     */
+    const contactForm = document.querySelector('#contact form');
+    const formSuccessMessage = document.getElementById('form-success-message');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault(); // Evita la recarga de la página
+
+            const formData = new FormData(contactForm);
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    contactForm.reset(); // Limpia todos los campos del formulario
+                    formSuccessMessage.classList.remove('hidden'); // Muestra el mensaje de éxito
+
+                    // Oculta el mensaje de éxito después de unos segundos
+                    setTimeout(() => {
+                        formSuccessMessage.classList.add('hidden');
+                    }, 5000); // El mensaje desaparece después de 5 segundos
+
+                } else {
+                    // Manejo de errores si el envío falla (opcional)
+                    alert('Hubo un problema al enviar tu mensaje. Por favor, inténtalo de nuevo.');
+                }
+            } catch (error) {
+                console.error('Error al enviar el formulario:', error);
+                alert('Ocurrió un error de red. Por favor, verifica tu conexión e inténtalo de nuevo.');
+            }
         });
     }
 });
