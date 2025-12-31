@@ -1,0 +1,28 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.typing-cursor {
+    animation: blink 0.8s infinite;
+    font-weight: bold;
+}
+
+@keyframes blink { 50% { opacity: 0; } }
+
+/* Animación al pasar el mouse por las habilidades */
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px -10px rgba(99, 102, 241, 0.4);
+}
+
+/* Espaciado extra para secciones */
+section {
+    scroll-margin-top: 100px;
+}
+
+/* Añade esto a tu style.css */
+#about .font-bold.text-white {
+    background: linear-gradient(to bottom, #ffffff, #94a3b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

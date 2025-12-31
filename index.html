@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazly Uzcategui | Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#0f172a] text-slate-300 antialiased font-['Plus_Jakarta_Sans']">
+    
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#0f172a]/90 backdrop-blur-md border-b border-slate-800">
+        <nav class="container mx-auto flex justify-between items-center px-6 py-4">
+            <a href="#hero" class="text-xl font-extrabold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">NU.DEV</a>
+            <ul class="hidden md:flex space-x-8 text-sm font-medium">
+                <li><a href="#about" class="hover:text-indigo-400 transition">Sobre Mí</a></li>
+                <li><a href="#skills" class="hover:text-indigo-400 transition">Habilidades</a></li>
+                <li><a href="#experience" class="hover:text-indigo-400 transition">Experiencia</a></li>
+                <li><a href="#projects" class="hover:text-indigo-400 transition">Proyectos</a></li>
+                <li><a href="#contact" class="hover:text-indigo-400 transition">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="min-h-screen flex flex-col items-center justify-center pt-20 text-center px-6">
+        <div class="relative mb-8">
+            <div class="absolute inset-0 bg-indigo-500 rounded-full blur-3xl opacity-20 animate-pulse"></div>
+            <img src="img/perfil.jpg" alt="Nazly Uzcategui" class="relative w-44 h-44 md:w-52 md:h-52 rounded-full border-4 border-indigo-500/30 object-cover shadow-2xl">
+        </div>
+        <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4 tracking-tight">Nazly Uzcategui</h1>
+        <div class="text-xl md:text-3xl font-semibold mb-8 text-indigo-400 h-10">
+            <span id="typing-text"></span><span class="typing-cursor">|</span>
+        </div>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="#projects" class="bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-3 rounded-full font-bold transition-all shadow-lg shadow-indigo-500/20">Mis Proyectos</a>
+            <a href="HV NAZLY U 2026.pdf" download class="bg-slate-800 hover:bg-slate-700 text-white px-8 py-3 rounded-full font-bold transition-all border border-slate-700">Descargar CV</a>
+        </div>
+    </section>
+
+   <section id="about" class="py-24 container mx-auto px-6">
+    <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold text-white mb-12 border-l-4 border-indigo-500 pl-4">Sobre Mí</h2>
+        
+        <div class="grid md:grid-cols-5 gap-12 items-start">
+            <div class="md:col-span-3 space-y-6 text-lg leading-relaxed text-slate-300">
+                <p>
+                    Soy <span class="text-white font-bold">Desarrolladora Full Stack</span> y estudiante de <span class="text-white font-bold">Ingeniería de Sistemas</span> con una trayectoria híbrida: 10 años dominando la infraestructura TI y los últimos años enfocada en la creación de software robusto.
+                </p>
+                <p>
+                    Mi diferencial es la <span class="text-indigo-400">visión analítica</span>. No solo escribo código; entiendo los procesos de negocio. He transformado operaciones manuales en soluciones digitales eficientes utilizando el stack **Node.js y SQL**, impactando directamente en la productividad de las empresas donde he colaborado.
+                </p>
+                <div class="pt-4 flex gap-6">
+                    <div>
+                        <span class="block text-3xl font-bold text-white">10+</span>
+                        <span class="text-sm text-indigo-400 uppercase tracking-tighter">Años en TI</span>
+                    </div>
+                    <div>
+                        <span class="block text-3xl font-bold text-white">30%</span>
+                        <span class="text-sm text-indigo-400 uppercase tracking-tighter">Eficiencia SQL</span>
+                    </div>
+                    <div>
+                        <span class="block text-3xl font-bold text-white">Full</span>
+                        <span class="text-sm text-indigo-400 uppercase tracking-tighter">Stack Focus</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 space-y-4">
+                <div class="p-6 bg-slate-800/40 rounded-2xl border border-slate-700/50">
+                    <h4 class="text-indigo-400 font-bold text-sm uppercase mb-2 italic">Mi Enfoque Actual</h4>
+                    <p class="text-sm text-slate-300">Creación de APIs escalables, optimización de bases de datos relacionales y despliegue de interfaces modernas con Tailwind CSS.</p>
+                </div>
+                <div class="p-6 bg-slate-800/40 rounded-2xl border border-slate-700/50">
+                    <h4 class="text-indigo-400 font-bold text-sm uppercase mb-2 italic">Educación</h4>
+                    <ul class="text-sm text-slate-300 space-y-1">
+                        <li>• Ingeniería de Sistemas (En curso)</li>
+                        <li>• Bootcamp Full Stack (Talento Tech)</li>
+                        <li>• Tecnóloga en Informática</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="skills" class="py-24 bg-slate-900/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Mis Habilidades Técnicas</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="skill-card p-6 bg-slate-800 rounded-2xl text-center border border-slate-700 hover:border-indigo-500 transition">
+                    <span class="text-4xl block mb-2">🌐</span>
+                    <h3 class="font-bold text-white uppercase text-xs tracking-widest">Frontend</h3>
+                    <p class="text-slate-400 text-sm mt-2">HTML5, CSS3, Tailwind, JavaScript (ES6+)</p>
+                </div>
+                <div class="skill-card p-6 bg-slate-800 rounded-2xl text-center border border-slate-700 hover:border-indigo-500 transition">
+                    <span class="text-4xl block mb-2">⚙️</span>
+                    <h3 class="font-bold text-white uppercase text-xs tracking-widest">Backend</h3>
+                    <p class="text-slate-400 text-sm mt-2">Node.js, Express, Python (Django)</p>
+                </div>
+                <div class="skill-card p-6 bg-slate-800 rounded-2xl text-center border border-slate-700 hover:border-indigo-500 transition">
+                    <span class="text-4xl block mb-2">💾</span>
+                    <h3 class="font-bold text-white uppercase text-xs tracking-widest">Base de Datos</h3>
+                    <p class="text-slate-400 text-sm mt-2">SQL Server, PostgreSQL, Queries Avanzadas</p>
+                </div>
+                <div class="skill-card p-6 bg-slate-800 rounded-2xl text-center border border-slate-700 hover:border-indigo-500 transition">
+                    <span class="text-4xl block mb-2">🚀</span>
+                    <h3 class="font-bold text-white uppercase text-xs tracking-widest">Otros</h3>
+                    <p class="text-slate-400 text-sm mt-2">SAP Business One, Git/GitHub, Vercel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section id="experience" class="py-24 container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-white mb-12 border-l-4 border-indigo-500 pl-4">Experiencia Profesional</h2>
+    <div class="space-y-12">
+        <div class="relative pl-8 border-l border-indigo-500/30">
+            <div class="absolute w-4 h-4 bg-indigo-500 rounded-full -left-[8.5px] top-1 shadow-[0_0_10px_#6366f1]"></div>
+            <h3 class="text-xl font-bold text-white">Desarrolladora Full Stack</h3>
+            <p class="text-indigo-400 font-medium italic">Freelance | 2023 - Actual</p>
+            <p class="mt-3 text-slate-400 max-w-3xl">Desarrollo de proyectos web personalizados aplicando arquitecturas modernas y soluciones Full Stack adaptadas al cliente.</p>
+        </div>
+
+        <div class="relative pl-8 border-l border-slate-700">
+            <div class="absolute w-4 h-4 bg-slate-700 rounded-full -left-[8.5px] top-1"></div>
+            <h3 class="text-xl font-bold text-white">Analista de Sistemas</h3>
+            <p class="text-indigo-400 font-medium italic">TvNovedadesTv (Franquicias Direct TV) | Marzo 2021 - Actual</p>
+            <ul class="mt-3 text-slate-400 max-w-3xl space-y-2 text-sm leading-relaxed">
+                <li>• <span class="text-slate-200">Automatización:</span> Lideré la automatización de facturación masiva reduciendo tiempos de procesamiento en un <span class="text-indigo-400 font-bold">30%</span>.</li>
+                <li>• <span class="text-slate-200">Desarrollo Web & SQL:</span> Creación de consultas SQL personalizadas, reportes en "Mi Portal SAP" y colaboración en APIs y sitios web.</li>
+                <li>• <span class="text-slate-200">Gestión ERP:</span> Soporte integral y administración de bases de datos SQL (Nivel Intermedio) sobre infraestructura SAP en la nube.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <section id="projects" class="py-24 bg-slate-900/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Proyectos Recientes</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="project-card bg-slate-800 p-8 rounded-3xl border border-slate-700 hover:scale-[1.02] transition">
+                    <h3 class="text-2xl font-bold text-white mb-3">Plataforma de Capacitación</h3>
+                    <p class="text-slate-400 mb-6">Plataforma centralizada para formación corporativa que redujo tiempos de inducción en un 20%.</p>
+                    <div class="flex gap-2">
+                        <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-xs">Node.js</span>
+                        <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-xs">SQL</span>
+                    </div>
+                </div>
+         <div class="project-card bg-slate-800 p-8 rounded-3xl border border-slate-700 hover:scale-[1.02] transition">
+            <h3 class="text-2xl font-bold text-white mb-3">Automatización de Facturación ERP</h3>
+            <p class="text-slate-400 mb-6 italic text-sm">Optimización de Procesos de Negocio</p>
+            <p class="text-slate-300 mb-6">Implementación de queries SQL avanzadas para la integración masiva de datos en SAP, reduciendo errores operativos en un 15%[cite: 66].</p>
+            <div class="flex gap-2">
+                <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">SQL Server</span>
+                 <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">SAP B1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+   <section id="contact" class="py-24 text-center container mx-auto px-6">
+        <h2 class="text-4xl font-extrabold text-white mb-6">¿Iniciamos un proyecto?</h2>
+        <p class="text-slate-400 mb-10 text-lg max-w-xl mx-auto">Estoy lista para aportar mis habilidades técnicas en tu próximo equipo de desarrollo.</p>
+        <a href="mailto:nazly.uzcategui@gmail.com" class="bg-indigo-600 hover:bg-indigo-500 text-white px-12 py-4 rounded-full font-bold text-lg transition-all">Enviar Mensaje</a>
+    </section>
+
+    <footer class="py-12 border-t border-slate-800 bg-[#0f172a] text-center">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-center gap-6 mb-8">
+                <a href="https://github.com/Lanash83" target="_blank" title="GitHub" class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-all border border-slate-700 shadow-lg group">
+                    <svg class="w-6 h-6 text-white group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.43.372.82 1.102.82 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.298 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/nazly-u-3a4a6958/" target="_blank" title="LinkedIn" class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-all border border-slate-700 shadow-lg group">
+                    <svg class="w-6 h-6 text-white group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+            </div>
+            
+            <p class="text-slate-500 text-sm font-medium">
+                © 2025 Nazly Uzcategui - Desarrollado con ❤️ y código limpio.
+            </p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/573215097468" target="_blank" class="fixed bottom-8 right-8 z-50 hover:scale-110 transition-transform">
+        <img src="img/ws.jpg" alt="WhatsApp" class="w-14 h-14 rounded-full shadow-lg border-2 border-green-500">
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>
