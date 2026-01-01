@@ -33,10 +33,10 @@ Importa el repositorio mi-portafolio.
 Vercel detectará automáticamente los archivos y publicará tu web.
 
 ✉️ Contacto
-LinkedIn: [Tu Perfil de LinkedIn]
+LinkedIn: https://www.linkedin.com/in/nazly-u-3a4a6958/
 
 Correo: nazly.uzcategui@gmail.com
 
 WhatsApp: +57 3215097468
 
-© 2025 Nazly Uzcategui - Desarrollado con ❤️ y código limpio.
+© 2026 Nazly Uzcategui - Desarrollado con ❤️ y código limpio.
