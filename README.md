@@ -1,7 +1,7 @@
 # 🚀 Portafolio Profesional - Nazly Uzcategui
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Lanash83/mi-portafolio?color=6366f1)
-![Vercel](https://img.shields.io/badge/deploy-vercel-000000?style=flat&logo=vercel)
+![GitHub repo size](https://github.com/Lanash83/mi-portafolio/tree/master)
+![Vercel](https://mi-portafolio-git-master-nazlys-projects.vercel.app/)
 
 Bienvenido al repositorio de mi portafolio personal. Soy **Desarrolladora Full Stack** y estudiante de **Ingeniería de Sistemas**, con una trayectoria de más de 10 años en el sector TI.
 
