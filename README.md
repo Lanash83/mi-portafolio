@@ -7,7 +7,7 @@ Bienvenido al repositorio de mi portafolio personal. Soy **Desarrolladora Full S
 
 ## 🛠️ Stack Tecnológico
 * **Frontend:** HTML5, CSS3, Tailwind CSS.
-* **Backend & DB:** Node.js, SQL Server, SAP B1.
+* **Backend & DB:** Node.js, Python (Django), SQL Server, SAP B1.
 * **Herramientas:** Git, Vercel, JavaScript Vanilla.
 
 ## 🌟 Logros Destacados
