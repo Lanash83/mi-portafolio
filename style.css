@@ -20,7 +20,7 @@ section {
     scroll-margin-top: 100px;
 }
 
-/* Añade esto a tu style.css */
+
 #about .font-bold.text-white {
     background: linear-gradient(to bottom, #ffffff, #94a3b8);
     -webkit-background-clip: text;

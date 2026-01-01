@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     type();
 
-    // 2. NAVEGACIÓN Y SCROLL SUAVE CORREGIDO
+    // 2. NAVEGACIÓN Y SCROLL SUAVE 
     const links = document.querySelectorAll('nav a, #hero a');
     links.forEach(link => {
         link.addEventListener('click', (e) => {
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.preventDefault();
                 const targetSection = document.querySelector(targetId);
                 if (targetSection) {
-                    const offset = 90; // Ajuste para que el menú no tape el título
+                    const offset = 90;
                     const bodyRect = document.body.getBoundingClientRect().top;
                     const elementRect = targetSection.getBoundingClientRect().top;
                     const elementPosition = elementRect - bodyRect;
