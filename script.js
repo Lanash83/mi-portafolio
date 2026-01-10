@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. Efecto Typing
+    //  Efecto Typing
     const typingTextElement = document.getElementById('typing-text');
     const phrases = ["Desarrolladora Full Stack", "Especialista en SQL", "Analista de Sistemas SAP", "Estudiante de Ingeniería"];
     let phraseIndex = 0, charIndex = 0, isDeleting = false;
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     type();
 
-    // 2. NAVEGACIÓN Y SCROLL SUAVE 
+    //  NAVEGACIÓN Y SCROLL SUAVE 
     const links = document.querySelectorAll('nav a, #hero a');
     links.forEach(link => {
         link.addEventListener('click', (e) => {
