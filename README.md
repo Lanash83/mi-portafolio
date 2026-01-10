@@ -14,6 +14,27 @@ Bienvenido al repositorio de mi portafolio personal. Soy **Desarrolladora Full S
 * **Automatización SQL:** Reducción del 30% en tiempos de procesamiento de facturación masiva en Franquicias Direct TV.
 * **Plataforma de Capacitación:** Reducción del 20% en tiempos de inducción corporativa.
 
+# 📂 Proyecto Destacado: ⚙️ SAP Business One - Automation Engine (DTW & SQL)
+
+Este proyecto contiene la lógica de automatización para la importación masiva de datos transaccionales hacia **SAP Business One** utilizando el **Data Transfer Workbench (DTW)**.
+
+## 🚀 Logros del Proyecto
+* **Eficiencia:** Mejora del 30% en los tiempos de procesamiento de facturación masiva.
+* **Calidad:** Reducción del 15% en errores manuales mediante la automatización de la migración.
+* **Seguridad:** Implementación de consultas directas en XML para evitar el manejo de archivos planos sensibles.
+
+## 🛠️ Detalles Técnicos
+El núcleo del sistema es un archivo **XML de configuración** que permite:
+* **Extracción Dinámica:** Uso de la etiqueta `<Extorlogin>` para ejecutar queries SQL integradas que obtienen datos en tiempo real de la base de datos `FRANQUICIASFULL`.
+* **Mapeo Complejo:** Configuración de objetos para Pagos Recibidos, Órdenes de Venta y aplicación de pagos a facturas y tarjetas de crédito.
+* **Control de Ejecución:** Parámetros optimizados como `<AddAllItems>`, `<DataType>` y `<TestRun>` para garantizar cargas seguras.
+
+## 📂 Estructura sugerida para este repositorio
+* `/docs`: Manual de usuario en PDF.
+* `/xml-configs`: Ejemplos de archivos XML para Pagos y Órdenes.
+* `/sql-scripts`: Consultas SQL de extracción optimizadas.
+
+
 ## 📂 Estructura del Proyecto
 ```text
 /
