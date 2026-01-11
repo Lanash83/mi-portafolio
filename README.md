@@ -14,7 +14,7 @@ Bienvenido al repositorio de mi portafolio personal. Soy **Desarrolladora Full S
 * **Automatización SQL:** Reducción del 30% en tiempos de procesamiento de facturación masiva en Franquicias Direct TV.
 * **Plataforma de Capacitación:** Reducción del 20% en tiempos de inducción corporativa.
 
-# 📂 Proyecto Destacado: ⚙️ SAP Business One - Automation Engine (DTW & SQL)
+# 📂 Proyecto Destacado: ⚙️ SAP Business One - Automation Engine (DTW & SQL).
 
 Este proyecto contiene la lógica de automatización para la importación masiva de datos transaccionales hacia **SAP Business One** utilizando el **Data Transfer Workbench (DTW)**.
 
